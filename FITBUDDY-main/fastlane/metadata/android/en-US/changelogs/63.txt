@@ -1,0 +1,2 @@
+• fix: lay out the AI provider picker as a 2x2 grid
+• fix: detect vision models on local OpenAI-compatible servers

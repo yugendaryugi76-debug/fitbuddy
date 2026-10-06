@@ -1,0 +1,14 @@
+# Copy to local.properties and adjust paths. Never commit local.properties.
+
+# Android SDK (Android Studio usually writes this automatically)
+sdk.dir=/path/to/Android/sdk
+
+# Optional — seeds first-run AI defaults in Settings. App works offline without these.
+OPENROUTER_API_KEY=
+AI_MODEL=google/gemma-4-31b-it:free
+
+# Sentry DSN and the cloud-backup proxy API key are committed obfuscated directly in
+# app/build.gradle.kts (see sentryDsnBlobEscaped / backupApiKeyBlobEscaped) — no env vars
+# or GitHub secrets needed for either. Atlas credentials live only in the proxy, never here.
+CLOUD_BACKUP_BASE_URL=https://fitbuddy-cloud-backup.vercel.app
+MONGO_DB_NAME=fitbuddy
